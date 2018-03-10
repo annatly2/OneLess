@@ -26,6 +26,7 @@ PostList.propTypes = {
     content: PropTypes.string.isRequired,
     slug: PropTypes.string.isRequired,
     cuid: PropTypes.string.isRequired,
+    dateAdded: PropTypes.instanceOf(Date).isRequired,
   })).isRequired,
   handleDeletePost: PropTypes.func.isRequired,
 };
