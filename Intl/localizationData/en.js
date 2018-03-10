@@ -1,16 +1,16 @@
 export default {
   locale: 'en',
   messages: {
-    siteTitle: 'MERN Starter Blog',
-    addPost: 'Add Post',
+    siteTitle: 'OneLess',
+    addPost: 'Post Food',
     switchLanguage: 'Switch Language',
     twitterMessage: 'We are on Twitter',
     by: 'By',
     deletePost: 'Delete Post',
     createNewPost: 'Create new post',
-    authorName: 'Author\'s Name',
-    postTitle: 'Post Title',
-    postContent: 'Post Content',
+    authorName: 'Location',
+    postTitle: 'Food',
+    postContent: 'Availability',
     submit: 'Submit',
     comment: `user {name} {value, plural,
     	  =0 {does not have any comments}
