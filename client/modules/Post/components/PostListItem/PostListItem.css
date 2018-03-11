@@ -56,3 +56,17 @@
   font-size: 16px;
   color: #555;
 }
+
+.content-wrapper {
+  width: 100%;
+}
+
+.food-icon {
+  width: 25%;
+  float: left;
+}
+
+.food-description {
+  width: 75%;
+  overflow: hidden;
+}

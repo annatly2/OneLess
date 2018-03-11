@@ -5,6 +5,8 @@ import { FormattedMessage } from 'react-intl';
 // Import Style
 import styles from './PostListItem.css';
 
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+
 function PostListItem(props) {
   return (
     <div className={styles['single-post']}>
@@ -14,7 +16,7 @@ function PostListItem(props) {
         </Link>
       </h3>
       <p className={styles['author-name']}><FormattedMessage id="by" /> {props.post.name}</p>
-      <p className={styles['author-name']}><FormattedMessage id="Posted" /> {props.post.dateAdded.toString().substring(0, 10)}</p>
+      <p className={styles['author-name']}><FormattedMessage id="Posted" /> {new Date(props.post.dateAdded).toLocaleDateString('en-US', options)}</p>
       <p className={styles['post-desc']}>{props.post.content}</p>
       {/* <p className={styles['post-action']}><a href="#" onClick={props.onDelete}><FormattedMessage id="deletePost" /></a></p>*/}
       <hr className={styles.divider} />
