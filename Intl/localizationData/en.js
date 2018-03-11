@@ -1,16 +1,16 @@
 export default {
   locale: 'en',
   messages: {
-    siteTitle: 'OneLess',
+    siteTitle: 'OneLess ... Hungry Person',
     addPost: 'Post Food',
     switchLanguage: 'Switch Language',
     twitterMessage: 'We are on Twitter',
-    by: 'By',
+    by: '@',
     deletePost: 'Delete Post',
     createNewPost: 'Create new post',
     authorName: 'Location',
     postTitle: 'Food',
-    postContent: 'Availability',
+    postContent: 'Comment',
     submit: 'Submit',
     comment: `user {name} {value, plural,
     	  =0 {does not have any comments}
