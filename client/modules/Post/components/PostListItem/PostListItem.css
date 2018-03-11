@@ -8,6 +8,7 @@
 }
 
 .post-title{
+  font-family: 'Lobster', cursive;
   font-size: 28px;
   margin-bottom: 16px;
   font-weight: 400;
@@ -20,13 +21,13 @@
 }
 
 .author-name{
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 16px;
   color: #757575;
 }
 
 .post-desc{
-  font-size: 14px;
+  font-size: 16px;
   color: #888;
   margin-bottom: 8px;
 }
