@@ -84,7 +84,9 @@ const renderFullPage = (html, initialState) => {
         ${isProdMode ? `<link rel='stylesheet' href='${assetsManifest['/app.css']}' />` : ''}
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'/>
         <link rel="shortcut icon" href="http://res.cloudinary.com/hashnode/image/upload/v1455629445/static_imgs/mern/mern-favicon-circle-fill.png" type="image/png" />
-      </head>
+
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+        </head>
       <body>
         <div id="root">${html}</div>
         <script>
@@ -96,6 +98,15 @@ const renderFullPage = (html, initialState) => {
         </script>
         <script src='${isProdMode ? assetsManifest['/vendor.js'] : '/vendor.js'}'></script>
         <script src='${isProdMode ? assetsManifest['/app.js'] : '/app.js'}'></script>
+
+        <script>
+            function init() {
+                var input = document.getElementById('locationField');
+                var autocomplete = new google.maps.places.Autocomplete(input);
+            }
+
+            google.maps.event.addDomListener(window, 'load', init);
+        </script>
       </body>
     </html>
   `;
