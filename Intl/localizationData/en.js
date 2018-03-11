@@ -1,7 +1,7 @@
 export default {
   locale: 'en',
   messages: {
-    siteTitle: 'OneLess',
+    siteTitle: 'OneLess ... Hungry Person',
     addPost: 'Post Food',
     switchLanguage: 'Switch Language',
     twitterMessage: 'We are on Twitter',
